@@ -5,7 +5,7 @@ async function fetchGreeting(): Promise<string>{
             }, 2000);
         });
     }
-    let str=await fetchGreeting();
-    console.log(str);
+    let str=fetchGreeting();
+    console.log(await str);
     
     

@@ -34,9 +34,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-// Write a simple asynchronous TypeScript function fetchGreeting that returns a
-// greeting message after a 2-second delay using setTimeout.
-//
 function fetchGreeting() {
     return __awaiter(this, void 0, void 0, function () {
         return __generator(this, function (_a) {
@@ -48,5 +45,5 @@ function fetchGreeting() {
         });
     });
 }
-var str = await fetchGreeting();
-console.log(str);
+var str = fetchGreeting();
+console.log(await str);
